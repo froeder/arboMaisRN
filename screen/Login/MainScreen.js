@@ -17,15 +17,15 @@ export default class MainScreen extends Component {
                 style={{ width: '100%', height: '100%' }}>
                 <View style={styles.mainContainer}>
                     <View style={{ ...styles.mainContent, paddingBottom: 20 }}>
-                        <Title style={{color: '#FFF', fontSize: 30}}> ArboMais </Title>
-                        <Subheading style={{color: '#FFF'}}>UFMS</Subheading>
+                        <Title style={{color: '#000', fontSize: 30}}> ArboMais </Title>
+                        <Subheading style={{color: '#000'}}>UFMS</Subheading>
                     </View>
                     <TextInput style={styles.mainInput} label="E-mail" mode="outlined" />
                     <TextInput style={{ paddingTop: 20 }} label="Senha" mode="outlined" secureTextEntry={true} />
                     <View style={styles.buttonContainer}>
                         <Button style={{backgroundColor: '#2EE400'}} mode="contained">Login</Button>
                         <Button style={{ marginTop: 20, backgroundColor: '#00FFFF' }} mode="contained">Criar Conta</Button>
-                        <Button color='#FFF'  style={{ marginTop: 10}}>Esqueci Minha Senha</Button>
+                        <Button color='#000'  style={{ marginTop: 10}}>Esqueci Minha Senha</Button>
                     </View>
                 </View>
             </ImageBackground>

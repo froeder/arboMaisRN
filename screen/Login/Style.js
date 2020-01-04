@@ -5,10 +5,16 @@ const styles = StyleSheet.create({
     mainContainer: {
         flex: 1 ,
         justifyContent: "center" ,
-        padding: 50
+        alignSelf: 'center',
+        padding: 50 ,
+        backgroundColor: 'rgba(255,255,255,0.9)' ,
+        position: 'absolute' ,
+        borderRadius: 20,
+        marginTop: '30%',
     } ,
     mainContent: {
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingTop: '30%'
     } ,
     mainInput: {
         borderRadius: 20
