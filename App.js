@@ -1,24 +1,12 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { AppRegistry } from 'react-native';
-import { Provider as PaperProvider } from 'react-native-paper';
-import MainScreen from './screen/Login/MainScreen';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-export default function Main() {
-  return (
-    <PaperProvider>
-      <MainScreen />
-    </PaperProvider>
-  );
-}
+import Login from './screen/Login/MainScreen';
+import SignUpScreen from './screen/Login/SignUp';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+const mainNavigation = createStackNavigator({
+  Login,
+  SignUpScreen,
 });
 
-AppRegistry.registerComponent('main', () => Main);
+export default createAppContainer(mainNavigation);

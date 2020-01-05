@@ -24,7 +24,7 @@ export default class MainScreen extends Component {
                     <TextInput style={{ paddingTop: 20 }} label="Senha" mode="outlined" secureTextEntry={true} />
                     <View style={styles.buttonContainer}>
                         <Button style={{backgroundColor: '#2EE400'}} mode="contained">Login</Button>
-                        <Button style={{ marginTop: 20, backgroundColor: '#00FFFF' }} mode="contained">Criar Conta</Button>
+                        <Button onPress={() => this.props.navigation.push('SignUp')} style={{ marginTop: 20, backgroundColor: '#00FFFF' }} mode="contained">Criar Conta</Button>
                         <Button color='#000'  style={{ marginTop: 10}}>Esqueci Minha Senha</Button>
                     </View>
                 </View>
